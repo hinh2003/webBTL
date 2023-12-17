@@ -1,0 +1,419 @@
+
+body {
+    color: #ffffff;
+    background-color: #2c2c2c;
+    width: 100%;
+}
+a, .title,.title-text{
+    color: #ffffff;
+    font-size: larger;
+}
+/* Thay đổi màu nút*/
+.btn-outline-success{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-outline-success:hover{
+    border-color: #ffffff;    
+    background-color: #918b8b;
+}
+.bg-dark{
+    background-color: #000000!important;
+}
+
+.maginn{
+    margin-right:  400px;
+}
+.maginnf{
+    margin-right:  240px;
+}
+.size{
+    gap:5px;
+    width: 107px;
+}
+.heder{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar{
+    gap: 10px;
+    width: 100%;
+}
+.navbar-brand{
+    margin-top: 10px;
+}
+.menu-conten{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    width: auto;
+}
+.menu-conten-boder{
+    border-bottom:2px solid #ffffff;
+}
+.main-container-title{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;    
+}
+.main-container-list{
+    max-width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.title-text,.tab{
+   margin-top:5px;
+}
+.title-text{
+    color: #DAAD3B;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border: 1px solid #fff9f9;
+    border-radius: 7px;
+}
+.btn-secondary{
+    background-color:#c3c3c3;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+.btn-secondary:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(228, 228, 119, 0.979);
+}
+.list :hover{
+    opacity: 0.5;
+}
+.list,.iteam{
+    display: flex;
+    
+}
+.list ,.iteam{
+    flex-wrap:wrap;
+}
+.list a{
+    width: 100%;
+}
+
+img ,.iteam  {
+    border-radius: 6px;
+    margin-bottom: 10px;
+   
+}
+
+img{
+    width: 100%;
+}
+h4{
+    font-size: 13px;
+    color: #44e2ff;
+    text-align: center;  
+}
+
+.iteam{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 10px 10px;
+    justify-content: center;
+    width: calc(100%/5);    
+
+}
+.iteam img{
+}
+.list{
+    
+}
+
+.title-mid ,.main-container-title{
+    margin-left: 10px ;
+}
+.title-mid {
+    width: auto;
+    display: flex;
+    
+}
+
+.xem-them,.xem-them a {
+    float: right;
+    padding: 0px 20px 0px 0px;
+    color: #c9d427;
+    font-size: 14px;
+    text-decoration: none;
+    width: auto;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    background-color: #000000;
+}
+.logo-end{
+    margin-top: 5px;
+    width: 200px;
+    margin-right: 140px;
+}
+.footer-sub{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.addres{  
+    margin-left: 140px;
+    font-size: 16px;
+}
+
+.list-3{
+    display: flex;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+    margin-bottom: 200px;
+  padding: 45px;
+  text-align: center;
+  border: 1px solid white;
+
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #FFFFFF;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #000000;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+@media only screen and (max-width :900px) {
+    .iteam{
+        width: calc(100%/4);
+    }
+}
+
+@media only screen and (max-width :850px) {
+    .search-edit,.form-inline .form-control{
+        width:100px ;
+    }
+    .btn-outline-success{
+        display: none;
+    }
+}
+@media only screen and (max-width :800px) {
+    .addres{
+        margin: auto;
+    }
+    .logo-end{
+        margin: auto;
+        width: 80%;
+    }
+    .p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width :700px) {
+    .iteam{
+        width: calc(100%/3);
+    }
+}
+@media only screen and (max-width :650px) {
+    .nav-link{
+        font-size: 16px;
+    }
+    .navbar-expand {
+        padding: 0px;
+
+    }
+}
+@media only screen and (max-width :580px) {
+    .nav-link{
+        font-size: 15px;
+    }
+    .navbar-expand {
+        padding: 0px;
+
+    }
+    .iteam{
+        width: calc(100%/2);
+    }
+    
+}
+@media only screen and (max-width :552px) {
+    .nav-link{
+        font-size: 13px;
+    }
+    .navbar-expand {
+        padding: 0px;
+
+    }
+    .iteam{
+        width: calc(100%/2);
+    }
+    
+}
+@media only screen and (max-width :524px) {
+    .nav-link{
+        font-size: 11px;
+    }
+    .navbar-expand {
+        padding: 0px;
+
+    }
+    .iteam{
+        width: calc(100%/2);
+    }
+    .menu-conten{
+        margin-left: auto;
+    }
+    
+}
+@media only screen and (max-width :480px) {
+    .nav-link{
+        font-size: 16px;
+    }
+    .navbar-expand{
+        flex-wrap: wrap;
+    }
+    .main-container-title{
+        flex-wrap: wrap
+    }
+    .main-container-list{
+        max-width: 100%;
+    }
+    .main-container-title{
+       justify-content: center;
+    }
+    .title-text{
+        font-size: 10px;
+    }
+    .footer-sub{
+
+    }
+}
+@media only screen and (max-width :400px) {
+    .nav-link{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width :376px) {
+    .nav-link{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width :360px) {
+    .search-edit,.form-inline .form-control{
+        width: 80px ;
+        word-wrap: break-word;
+    }
+    .nav-link{
+        word-wrap: break-word;
+    }
+}
+@media only screen and (max-width :337px) {
+    .nav-link{
+        font-size: 11px;
+    }
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background-color: #2c2c2c;
+  }
+
+  .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  .text{
+    color: white;
+    font-size:16px
+  }
+
+
+

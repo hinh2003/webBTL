@@ -1,0 +1,41 @@
+
+.video-move{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.chap-move{
+    display: flex;
+    background-color: rgb(27, 27, 27) ;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+.chap-move-iteam{
+    margin-left: 20px;
+    margin-bottom: 10px ;
+
+
+    
+}
+.chap-move h3{
+    font-size: 24px;
+    color: #f19e07;
+    margin-left: 10px;
+}
+.btn-secondary{
+    background-color:#cec9c9 ;
+    
+}
+.btn{
+    margin: 2px;
+
+}
+.chap-move a{
+    color: #906;
+}
