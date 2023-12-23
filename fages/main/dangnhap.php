@@ -8,7 +8,7 @@
             <input type="password" id="paswworddangnhap" name="paswworddangnhap" placeholder="password"/>
             <input type="submit" name="dangnhap" id="dangnhap">
             <p id="resultketqua"></p>
-            <p class="message">Not registered? <a href="index.php?quanly=dangki">Create an account</a></p>
+            <p class="message">Not registered? <a href="index.php?quanly=dangki&query=trangchu">Create an account</a></p>
         </form>
     </div>
 </div>
@@ -45,7 +45,7 @@ document.querySelector("#formdangnhap").addEventListener("submit", function (eve
                 if (data.trim() === "Sai tên đăng nhập" || data.trim() === "Sai Mật khẩu") {
         document.querySelector("#resultketqua").innerHTML = data;
     } else {
-        window.location.href = "/index.php?quanly=trangchu";
+        window.location.href = "/index.php?quanly=trangchu&query=trangchu";
     }
             })
             .catch(error => {

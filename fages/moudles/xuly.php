@@ -26,4 +26,4 @@ if (isset($_GET['ten'])  && $_GET['email']&&$_GET['password']) {
         echo "Tài Khoản đã tồn tại";
     }
 }
-?>
+

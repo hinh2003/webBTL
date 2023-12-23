@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#themphim').addEventListener('click', function (event) {
+    document.querySelector('#themphim').addEventListener('submit', function (event) {
         let isValid = checkvalidatethem();
         if (!isValid) {
             event.preventDefault(); // Ngăn form gửi đi

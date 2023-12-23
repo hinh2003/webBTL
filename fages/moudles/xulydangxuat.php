@@ -3,5 +3,5 @@
   if (isset($_SESSION['name'])) {
       unset($_SESSION['name']);
   }
-  header("Location:/index.php?quanly=trangchu");      
+  header("Location:/index.php?quanly=trangchu&query=trangchu");      
 ?>
