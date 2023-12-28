@@ -16,7 +16,7 @@
         while ($row = $result_theloaiphim->fetch_assoc()) {
             echo ' <div class="iteam">';
             echo '<a href="?quanly=trangchu&query=thongtin&id=' . $row["phim_id"] . '">';
-            echo '<img style="width: 100%;" src="/images/' . $row["anh"] . '" alt="Ảnh">';
+            echo '<img src="/images/' . $row["anh"] . '" alt="Ảnh">';
             echo '<h4>' . $row["ten_phim"] . '</h4>';
             echo '</a>';
             echo '</div>';

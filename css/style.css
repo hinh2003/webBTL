@@ -446,6 +446,12 @@ margin-top: 0;
 }
 .product-container span:hover{
     color: yellow;
+
 }
-
-
+.moveis_like{
+    display: flex;
+    gap: 10px;
+}
+.iteams{
+    width: 100%;
+}

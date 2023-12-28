@@ -28,6 +28,7 @@ $result = $conn->query($sql_phim);
         }
       ?>
   </div>
+
 </div>
 <div class="xem-them"><a  href="index.php?quanly=animenhat&query=trangchu" title="PHim nguoi dong">Xem thêm...</a></div>
 <div class="title-mid">

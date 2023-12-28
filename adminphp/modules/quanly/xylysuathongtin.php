@@ -16,11 +16,11 @@ require("/PTUDW/BTA/adminphp/config/connet.php");
             if (!empty($_POST['password'])) {
                 $password = $_POST['password'];
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-                $sql_update = "UPDATE nguoidung 
-                SET email = '$email',
-                password = '$hashed_password', 
-                quyen_id = (SELECT quyen_id FROM quyen WHERE ten_quyen = '$ten_quyen') 
-                WHERE nguoidung_id = $idsua";
+                $sql_update="UPDATE nguoidung 
+                            SET email = '$email',
+                            password = '$hashed_password', 
+                            quyen_id = (SELECT quyen_id FROM quyen WHERE ten_quyen = '$ten_quyen') 
+                            WHERE nguoidung_id = $idsua";
             } else {
                 $sql_update = "UPDATE nguoidung 
                 SET email = '$email',

@@ -32,7 +32,7 @@ if (isset($_POST['tenphim'])) {
     $sql = "SELECT COUNT(*) as total FROM phim WHERE ten_phim = '$ten_phim'";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
-    $total = $row['total'];
+    $total = $row['total']; 
     if(empty($ten_phim)){
         echo " Tên phim không được để trống";
     }

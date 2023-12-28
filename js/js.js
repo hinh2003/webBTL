@@ -100,4 +100,3 @@ function checkvalidateLogin() {
     }
     return true;
 }
-

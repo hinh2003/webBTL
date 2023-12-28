@@ -27,8 +27,8 @@ $result_theloai = $conn->query($sql_theloai);
             <?php
             if ($result_theloai->num_rows > 0) {
               while ($row_theloai = $result_theloai->fetch_assoc()) {
-                echo '<li><a class="dropdown-item text" href="?quanly=trangchu&query=sua&theloaiphim='.$row_theloai["theloai_id"].'">';
-                echo  $row_theloai["ten_theloai"];
+                echo '<li><a class="dropdown-item text" href="?quanly=trangchu&query=sua&theloaiphim=' . $row_theloai["theloai_id"] . '">';
+                echo $row_theloai["ten_theloai"];
                 echo '</a></li>';
               }
             }
@@ -38,16 +38,17 @@ $result_theloai = $conn->query($sql_theloai);
         <li class="nav-item">
           <a class="nav-link" href="index.php?quanly=tangthai&query=trangchu">Trạng Thái</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?quanly=nam&query=trangchu">Năm</a>
-        </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0 maginnf">
-        <div>
-          <input class="form-control mr-sm-2 search-edit " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+
+      <form action="index.php?quanly=trangchu&query=timkiem" method="POST" class="form-inline my-2 my-lg-0 maginnf dropdown">
+    <div class="title-mid">
+        <div class="dropdown">
+            <input name="searchInput" id="searchInput" class="form-control mr-sm-2 search-edit dropdown-toggle" type="text" aria-expanded="false" placeholder="Search" aria-label="Search">
+            <ul style="text-align: center;" id="livesearch" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
         </div>
-      </form>
+    </div>
+    <input name="subtimkiem" type="submit" class="btn btn-outline-success my-2 my-sm-0" value="Search">
+</form>
       <div class="login">
         <?php
         if (!isset($_SESSION)) {
@@ -71,3 +72,28 @@ $result_theloai = $conn->query($sql_theloai);
     </div>
   </nav>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function showResult(str) {
+      var searchTerm = str.trim();
+      if (searchTerm.length == 0) {
+        document.querySelector("#livesearch").innerHTML = "";
+        document.querySelector("#livesearch").style.border = "0px";
+        return;
+      }
+
+      fetch(`fages/moudles/xuly.php?timkiem=${searchTerm}`)
+        .then(response => {
+
+          return response.text();
+        })
+        .then(data => {
+            document.querySelector("#livesearch").innerHTML = data;
+        })
+    }
+
+    document.querySelector("#searchInput").addEventListener("keyup", function (event) {
+      showResult(event.target.value);
+    });
+  });
+</script>

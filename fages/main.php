@@ -9,6 +9,7 @@
     else{
         $tam = '';
     }
+
     if($tam == 'animenhat'&& $query=='trangchu'){
         include("main/anime.php");
     }
@@ -26,6 +27,13 @@
     }
     elseif($tam =='trangchu'&& $query=='thongtin'){
         include("main/phiminfo.php");
+    } 
+
+    elseif($tam =='trangchu'&& $query=='trangchu'){
+        include("main/index.php");
+    }
+    elseif($tam =='trangchu'&& $query=='timkiem'){
+        include("main/timkiem.php");     
     }
     else {
         include("main/index.php");
