@@ -82,23 +82,21 @@ else{
 }
  elseif (isset($_GET['id'])) {
     $id = $_GET['id'];
+    $sql_xoa1 = "DELETE FROM theloaiphim  WHERE phim_id= '$id'";
     $sql_xoa = "DELETE FROM phim WHERE phim_id= '$id'";
+    $result1 = $conn->query($sql_xoa1);
     $result = $conn->query($sql_xoa);
 
     header("Location: ../../index.php?action=thongke&query=them");
 } elseif (isset($_GET['idnguoidung'])) {
     $idnguoidung = $_GET['idnguoidung'];
+    $sql_xoaphimyeuthich = "DELETE FROM phim_yeuthich WHERE nguoidung_id= '$idnguoidung'";
     $sql_xoanguoidung = "DELETE FROM nguoidung WHERE nguoidung_id= '$idnguoidung'";
+    $result_xoaphimyeuthich ==$conn->query($sql_xoaphimyeuthich);
     $result = $conn->query($sql_xoanguoidung);
     if ($result) {
-        if (!isset($_SESSION)) {
-            session_start();
-        }
-        if ($_SESSION['is_admin'] == true) {
-            unset($_SESSION['name']);
-            header("Location: ../../index.php?action=them&query=them");
+        header("Location: ../../index.php?action=taikhoan&query=thongtin");
 
-        }
     }
     header("Location: ../../index.php?action=taikhoan&query=thongtin");
 }

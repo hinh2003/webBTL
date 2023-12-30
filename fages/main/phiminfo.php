@@ -51,24 +51,18 @@
                 $result = $conn->query($sql);
                 if($result->num_rows >0){
                     echo '<a id ="unlike" type="submit"  href="fages/moudles/xuly.php?idbo=' . $row["phim_id"] . '" class="btn btn-success ">Bỏ thích</a>';
-                    echo '<a type="submit"  href="" class="btn btn-info ">Trailer</a>';
-                    echo '<a type="submit"  href="" class="btn btn-danger ">Xem</a>';
+
                 }
                 else{
                    
                     echo '<a id ="like" type="submit" href="fages/moudles/xuly.php?id=' . $row["phim_id"] . '" class="btn btn-success">Lưu Lại</a>';
-                    echo '<a type="submit"  href="" class="btn btn-warning ">Trailer</a>';
-                    echo '<a type="submit"  href="" class="btn btn-info ">Xem</a>';
-                 
+
             }
-            }
-                else{
-                    echo '<a type="submit"  href="" class="btn btn-warning ">Trailer</a>';
-                    echo '<a type="submit"  href="" class="btn btn-info ">Xem</a>';
-                 
             }
 
                 ?>
+                <a  id ="soonTrailer"  type="submit"  href="" class="btn btn-warning ">Trailer</a>
+                <a  id ="soonXem" type="submit"  href="" class="btn btn-info ">Xem</a>
             </div>
        
         <?php
@@ -78,3 +72,21 @@
         }
     }
 ?>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('#soonXem').addEventListener('click',function(){
+            event.preventDefault();
+            Shownotifi();
+        });
+        document.querySelector('#soonTrailer').addEventListener('click',function(){
+            event.preventDefault();
+            Shownotifi();
+        });
+    });
+    function Shownotifi(){
+        let notifi = "Tính năng sẽ được phát triển trong tương lai";
+        alert(notifi);
+    }
+
+
+</script>

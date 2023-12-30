@@ -32,6 +32,7 @@ if ($result_role_id->num_rows > 0) {
     <title>ANIME HENTAI</title>
     <link rel="icon" href="images/Logo-main.ico">
     <script src="js/js.js"></script>
+    <script src="js/firebase.js"></script>
 </head>
 
 <body>

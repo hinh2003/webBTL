@@ -33,7 +33,7 @@ include ("D:\PTUDW\BTA\adminphp\config\connet.php");
 
     }
     else{
-       echo "Sai tên đăng nhập";
+       echo "Sai tên đăng nhập hoặc tài khoản chưa tồn tại";
     }
 }
 ?>

@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
         }
     });
+   
 });
 document.querySelector("#formdangky").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -22,6 +23,7 @@ document.querySelector("#formdangky").addEventListener("submit", function (event
             console.error('Error:', error);
         });
 });
+
 
 
 function checkvalidate() {
@@ -84,19 +86,3 @@ function checkvalidate() {
 
 }
 
-
-function checkvalidateLogin() {
-    let username = document.querySelector('#tendangnhap').value;
-    let password = document.querySelector('#paswworddangnhap').value;
-    if (username === "") {
-        document.querySelector('#resultketqua').innerHTML = "Tên đăng nhập không để trống";
-        document.querySelector('#tendangnhap').focus();
-        return false;
-    }
-    if (password === "") {
-        document.querySelector('#resultketqua').innerHTML = "Password không để trống";
-        document.querySelector('#paswworddangnhap').focus();
-        return false;
-    }
-    return true;
-}

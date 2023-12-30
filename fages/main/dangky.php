@@ -1,4 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <div class="login-page">
 <div class="form">
   <h3>Đăng Ký</h3>
